@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>mqtt-client</artifactId>
-  <name>demo</name>
+  <name>mqtt-client</name>
   <version>0.0.1-SNAPSHOT</version>
   <description>Demo project for Vertx</description>
   <build>
@@ -38,19 +38,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>com.example.demo.mqtt.client4vertx.ClientStart</mainClass>
-              <addClasspath>true</addClasspath>
-              <classpathPrefix>lib/</classpathPrefix>
-            </manifest>
-          </archive>
-          <classesDirectory />
-        </configuration>
       </plugin>
     </plugins>
   </build>
