@@ -9,21 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gmail</artifactId>
+    <artifactId>java-mail</artifactId>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <!--邮箱服务-->
         <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-mail-client</artifactId>
-            <version>3.5.0</version>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
         </dependency>
         <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-core</artifactId>
-            <version>3.5.0</version>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 
@@ -44,7 +44,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.chason.gmail.VertxDemo163</mainClass>
+                                    <mainClass>receive.Receive</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

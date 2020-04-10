@@ -6,6 +6,8 @@ import io.vertx.ext.mail.MailConfig;
 import io.vertx.ext.mail.MailMessage;
 import io.vertx.ext.mail.StartTLSOptions;
 
+import java.util.Date;
+
 /**
  * @author lichao
  * @version 1.0
@@ -13,31 +15,111 @@ import io.vertx.ext.mail.StartTLSOptions;
  * @date 2020/3/21
  */
 public class VertxDemo163 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Vertx vertx = Vertx.vertx();
+        MailConfig alphaConfig = new MailConfig();
+        alphaConfig.setHostname("smtp.gmail.com");
+        alphaConfig.setPort(465);
+        alphaConfig.setStarttls(StartTLSOptions.DISABLED);
+        alphaConfig.setSsl(true);
+//        alphaConfig.setUsername("chason777777@gmail.com");
+//        alphaConfig.setPassword("lichao256808");
+        alphaConfig.setUsername("kdstest0002@gmail.com");
+        alphaConfig.setPassword("kaadas123");
+        alphaConfig.setMaxPoolSize(1);
+
+//        MailClient alphaClient = MailClient.createNonShared(vertx, alphaConfig);
+//        System.out.println("开始发送邮件，from -> chason777777@gmail.com, to -> kdstest001@163.com");
+//        System.out.println("开始发送邮件，from -> kdstest0002@gmail.com, to -> kdstest001@163.com");
+//        for (int i =1;i<=500;i++){
+//            Thread.sleep(5000L);
+//            System.out.println("正在发送第" + i + "封邮件");
+//            MailMessage mailMessage = new MailMessage().setTo("kdstest001@163.com")
+//                    .setFrom("chason777777@gmail.com")
+//                    .setText("text" + new Date())
+//                    .setSubject("subject");
+//
+//            alphaClient.sendMail(mailMessage , rs -> {
+//                if (rs.failed()) {
+//                    System.out.println(rs.cause());
+//                }
+//            });
+//
+//        }
+//        System.out.println("开始发送邮件，from -> chason777777@gmail.com, to -> kdstest0001@gmail.com");
+//        System.out.println("开始发送邮件，from -> kdstest0002@gmail.com, to -> kdstest0001@gmail.com");
+//        for (int i =1;i<=500;i++){
+//            Thread.sleep(5000L);
+//            System.out.println("正在发送第" + i + "封邮件");
+//            MailMessage mailMessage = new MailMessage().setTo("kdstest0001@gmail.com")
+//                    .setFrom("chason777777@gmail.com")
+//                    .setText("text" + new Date())
+//                    .setSubject("subject");
+//
+//            alphaClient.sendMail(mailMessage , rs -> {
+//                if (rs.failed())
+//                    System.out.println(rs.cause());
+//            });
+//        }
+//        System.out.println("开始发送邮件，from -> chason777777@gmail.com, to -> 337522212@qq.com");
+//        System.out.println("开始发送邮件，from -> kdstest0002@gmail.com, to -> 337522212@qq.com");
+//        for (int i = 1; i <= 500; i++) {
+//            Thread.sleep(5000L);
+//            System.out.println("正在发送第" + i + "封邮件");
+//            MailMessage mailMessage = new MailMessage().setTo("337522212@qq.com")
+//                    .setFrom("chason777777@gmail.com")
+//                    .setText("text" + new Date())
+//                    .setSubject("subject");
+//
+//            alphaClient.sendMail(mailMessage, rs -> {
+//                if (rs.failed()) {
+//                    System.out.println(rs.cause());
+//                }
+//            });
+
+//        }
+
         MailConfig kaadasConfig = new MailConfig();
-        kaadasConfig.setHostname("smtp.gmail.com");
+        kaadasConfig.setHostname("smtp.163.com");
         kaadasConfig.setPort(465);
         kaadasConfig.setStarttls(StartTLSOptions.DISABLED);
         kaadasConfig.setSsl(true);
-        kaadasConfig.setUsername("alphabkkthailand@gmail.com");
-        kaadasConfig.setPassword("aht2015##");
-        kaadasConfig.setMaxPoolSize(100);
-
-        System.out.println("111111111111111111111111");
+//        kaadasConfig.setUsername("kdstest001@163.com");
+//        kaadasConfig.setPassword("IQNVQQMFXVFPPUTI");
+        kaadasConfig.setUsername("kdstest002@163.com");
+        kaadasConfig.setPassword("VXZKANKCJTEEDRLK");
+        kaadasConfig.setMaxPoolSize(1);
         MailClient kaadasClient = MailClient.createNonShared(vertx, kaadasConfig);
-        System.out.println("22222222222222222222");
-        MailMessage mailMessage = new MailMessage().setTo("chason777777@gmail.com")
-                .setFrom("alphabkkthailand@gmail.com")
-                .setText("Dear user:\\n\\nYour verification code is 123456 and valid in 5 minutes. Please use it right away.\\n\\nThank you for selecting Kaadas\\n\\nKaadas Team")
-                .setSubject("alpha e-mail verification code");
-        System.out.println("3333333333333333333");
+//        System.out.println("开始发送邮件，from -> kdstest001@163.com, to -> kdstest002@163.com");
+//        for (int i =1;i<=500;i++){
+//            Thread.sleep(5000L);
+//            System.out.println("正在发送第" + i + "封邮件");
+//            MailMessage mailMessage = new MailMessage().setTo("kdstest002@163.com")
+//                    .setFrom("kdstest001@163.com")
+//                    .setText("text" + new Date())
+//                    .setSubject("subject");
+//
+//            kaadasClient.sendMail(mailMessage , rs -> {
+//                if (rs.failed()) {
+//                    System.out.println(rs.cause());
+//                }
+//            });
+//
+//        }
+//        System.out.println("开始发送邮件，from -> kdstest001@163.com, to -> chason777777@gmail.com");
+        System.out.println("开始发送邮件，from -> kdstest002@163.com, to -> chason777777@gmail.com");
+        for (int i =1;i<=500;i++){
+            Thread.sleep(5000L);
+            System.out.println("正在发送第" + i + "封邮件");
+            MailMessage mailMessage = new MailMessage().setTo("chason777777@gmail.com")
+                    .setFrom("kdstest002@163.com")
+                    .setText("kds test,time:" + new Date())
+                    .setSubject("subject");
 
-        kaadasClient.sendMail(mailMessage , rs -> {
-            if (rs.failed())
-                System.out.println(rs.cause());
-            else
-                System.out.println(">>>>kaadas send email success emailAddr -> chason777777@163.com");
-        });
+            kaadasClient.sendMail(mailMessage , rs -> {
+                if (rs.failed())
+                    System.out.println(rs.cause());
+            });
+        }
     }
 }

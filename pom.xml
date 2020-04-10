@@ -16,6 +16,8 @@
         <module>mqttclientpt</module>
         <module>mqtt-client-pt</module>
         <module>gmail</module>
+        <module>email-test-statistics</module>
+        <module>java-mail</module>
     </modules>
     <properties>
         <vertx.version>3.8.5</vertx.version>
