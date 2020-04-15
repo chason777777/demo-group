@@ -6,22 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="email-test-statistics" />
         <module name="gmail" />
         <module name="java" />
+        <module name="java-mail" />
         <module name="mqtt-client" />
-        <module name="mqtt-client-pt" />
         <module name="nettytcp-client" />
         <module name="nettytcp-server" />
+        <module name="spring-email" />
+      </profile>
+      <profile name="Annotation profile for demo-group" enabled="true">
+        <sourceOutputDir name="../mqttclientpt/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../mqttclientpt/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mqtt-client-pt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="demo-group" target="1.8" />
+      <module name="email-test-statistics" target="1.8" />
       <module name="gmail" target="1.8" />
       <module name="java" target="1.8" />
+      <module name="java-mail" target="1.8" />
       <module name="mqtt-client" target="1.8" />
       <module name="mqtt-client-pt" target="1.8" />
       <module name="nettytcp-client" target="1.8" />
       <module name="nettytcp-server" target="1.8" />
+      <module name="spring-email" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

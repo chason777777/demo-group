@@ -3,12 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo-group.iml" filepath="$PROJECT_DIR$/demo-group.iml" />
+      <module fileurl="file://$PROJECT_DIR$/email-test-statistics/email-test-statistics.iml" filepath="$PROJECT_DIR$/email-test-statistics/email-test-statistics.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmail/gmail.iml" filepath="$PROJECT_DIR$/gmail/gmail.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-mail/java-mail.iml" filepath="$PROJECT_DIR$/java-mail/java-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/mqtt-client/mqtt-client.iml" filepath="$PROJECT_DIR$/mqtt-client/mqtt-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/mqtt-client-pt/mqtt-client-pt.iml" filepath="$PROJECT_DIR$/mqtt-client-pt/mqtt-client-pt.iml" />
       <module fileurl="file://$PROJECT_DIR$/nettytcp-client/nettytcp-client.iml" filepath="$PROJECT_DIR$/nettytcp-client/nettytcp-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/nettytcp-server/nettytcp-server.iml" filepath="$PROJECT_DIR$/nettytcp-server/nettytcp-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-email/spring-email.iml" filepath="$PROJECT_DIR$/spring-email/spring-email.iml" />
     </modules>
   </component>
 </project>

@@ -21,7 +21,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.chason.gmail.VertxDemo163</mainClass>
+                  <mainClass>com.chason.gmail.AwsSES</mainClass>
                 </transformer>
               </transformers>
             </configuration>
